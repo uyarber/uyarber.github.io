@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+body {background-color: black;
+	 font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+}
+
+h1, h2, p {
+    color: aliceblue;
+    margin-top: 50px;
+}
+
+header{
+    height: 1000px;
+    background-image: url(../images/desktop.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+
+
+header img{
+	margin-top:175px;
+	
+}
+
+header img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}  
+
+section img{
+	height:200px;
+}
+
+/*
+.catfish{
+	 background-attachment: fixed;
+}
+*/
+
+.goldfish{
+	color:black;
+}
+
+.laptop {
+    height: 1000px;
+    background-image: url(../images/laptop.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+	margin-right:25%;
+}
+.iphone{
+	height: 2000px;
+    background-image: url("../images/iphone.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+	transform: rotate(45deg);
+}
+
+.iphone p{
+	transform: rotate(-45deg);
+}
+
+.shadowfish{
+	margin-top:20%;
+}
+.smallShadowfish{
+	height: 75px;
+	width:125px;
+    transform: scaleX(-1);
+}
+
+.goldfish:hover {
+	filter: saturate(300%);
+	color:greenyellow;
+}
+
+.smallCatfish{
+    height: 75px;
+    width: 125px;
+	margin-top:-10%;
+	margin-right:-25%
+}
+
+.container{
+	color: aliceblue;
+}
