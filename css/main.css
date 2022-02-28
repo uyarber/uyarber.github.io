@@ -79,10 +79,10 @@ section img{
 }
 
 .smallCatfish{
+    width: 50px;
     height: auto;
-    width: 75px;
-	margin-top:-10%;
-	margin-right:-25%
+    margin-top:-10%;
+    margin-right:-25%
 }
 
 .container{
