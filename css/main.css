@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
-body {background-color: black;
-	 font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+body {
+	background-color: black;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
 }
 
 h1, h2, p {
@@ -21,13 +22,15 @@ header{
 
 header img{
 	margin-top:175px;
-	
 }
 
 header img:hover {
-  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }  
+
+.reverse{
+  transform: scaleX(-1);
+}
 
 section img{
 	height:200px;
@@ -41,6 +44,22 @@ section img{
 
 .goldfish{
 	color:black;
+	
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+	  
+/*    background-color: lightblue;*/
+  }
+	h1{
+		margin-top:10%;
+	}
+	header img{
+		width: 25%;
+		height: auto;
+		margin-top:25%;
+	}
 }
 
 .laptop {
@@ -51,6 +70,7 @@ section img{
     background-size: contain;
 	margin-right:25%;
 }
+
 .iphone{
 	height: 2000px;
     background-image: url("../images/iphone.png");
@@ -58,9 +78,10 @@ section img{
     background-position: center center;
     background-size: contain;
 	transform: rotate(45deg);
+	margins: -100px;
 }
 
-.iphone p{
+.iphoneText{
 	transform: rotate(-45deg);
 }
 
@@ -79,12 +100,66 @@ section img{
 }
 
 .smallCatfish{
-    width: 50px;
-    height: auto;
-    margin-top:-10%;
-    margin-right:-25%
+    width: 75px;
+	height: auto;
+	margin-top:-10%;
+	margin-right:-25%;
 }
 
 .container{
 	color: aliceblue;
+}
+
+
+@media only screen and (max-width: 1500px) {
+
+
+	header text{
+    font-size: medium;		
+	}
+	
+	header img{
+
+		width: 20%;
+		height: auto;
+		margin-top:10%;
+	}
+	
+	.smallCatfish{
+ 	width: 50px;
+	height: auto;
+	margin-top: -15%;
+	margin-right:-15%;
+	}
+	
+}
+
+@media only screen and (max-width: 600px) {
+
+
+	h1{
+		margin-top:10%;
+	}
+	header img{
+		width: 25%;
+		height: auto;
+		margin-top:25%;
+	}
+	
+	.smallCatfish{
+ 	width: 50px;
+	height: auto;
+	margin-top: -15%;
+	margin-right:-7%;
+	}
+	
+	img{
+		height:10%;
+		width:auto;
+	}
+	
+	iphone{
+		margin: -50px;
+	}
+
 }
