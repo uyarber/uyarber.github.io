@@ -79,8 +79,8 @@ section img{
 }
 
 .smallCatfish{
-    height: 75px;
-    width: 125px;
+    height: auto;
+    width: 75px;
 	margin-top:-10%;
 	margin-right:-25%
 }
